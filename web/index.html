@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/EstiloDefinitivo.css">
+	<link rel="stylesheet" type="text/css" href="css/Slideshow.css">
+</head>
+<body>
+<div id="interface">
+	<div id="mySidenav" class="sidenav"> <!-- Conteudo do menu -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Home</a>
+	  <a href="#">Quem somos</a>
+	  <a href="#">Sobre</a>
+	  <a href="#">Banda</a>
+	</div>
+
+	<!-- caixa modal do acesso -->
+	<div id="id01" class="modal"> 
+						  
+		<form class="modal-content animate" method="POST" action="check.jsp">
+			<div class="imgcontainer">
+				<span id="X" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<p id="headerForm"> Login </p>
+			<hr>
+
+			<!-- opções do login -->
+			<div class="container">   
+				<label><b>Usuario</b></label>
+				<input class="inputLogin" type="text" placeholder="Digite seu E-mail" name="uname" required>
+
+				<label><b>Senha</b></label>
+				<input class="inputLogin" type="password" placeholder="Digite a Senha" name="psw" required>  
+				
+				<button id="btnLogin" type="submit"> Login </button>
+				
+				<div id="checkLembrar">
+					<input  type="checkbox" checked="checked"> Lembrar me 
+					<span class="psg"> <a href="esqueci.html"> Esqueceu a senha? </a></span>
+				</div>
+			</div>
+
+			<div class="container2">
+			    <button id="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			    <span class="psw"> Não Tem um login ? <a href="cadastro.html">Cadastre-se</a></span>
+			   
+			</div>
+		</form>
+	</div>
+
+	<header>
+		 <!-- Navbar -->
+		<nav>
+			<table>     
+				<tr>
+					<th><span id="menuHamb" onclick="openNav()">&#9776; Menu</span></th>
+					<th>MAKE BAND</th>
+					<th><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+					</th>
+				</tr>
+			</table>
+		</nav>
+	</header>
+
+	<!-- Conteudo -->
+	<div id="conteudo">
+		<!-- SlidShow -->
+		<div class="slideshow">
+			<div class="slideshow-container">
+				<!-- Foto 1 Slide -->
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img class="imgSlide" src="imgs/first.jpg" >
+				</div>
+				<!-- Foto 2 Slide -->
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img class="imgSlide" src="imgs/second.jpg" >			  
+				</div>
+				<!-- Foto 3 Slide -->
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img class="imgSlide" src="imgs/third.jpg" >
+				</div>
+			</div>
+
+			<br>
+
+			<div id="btnSlide">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+		</div>	
+
+		<div id="pesquisa">
+			<input id="barraPesquisa" type="text" name="pesquisa" >
+			<button id="btnPesquisa" type="submit">Pesquisar</button>
+			<div id="Classe">
+				<input type="radio" name="gender" value="musico" id="musico">
+	  			<label class="btnRadio" for="musico">Musico</label>
+	  			<input type="radio" name="gender" value="banda" id="banda">
+	  			<label class="btnRadio" for="banda">Banda</label>
+	  		</div>
+  					
+		</div>		
+	</div>
+
+	<footer>
+
+	</footer>
+
+
+
+	<script type="text/javascript" src="js/menujs.js"></script>
+	<script type="text/javascript" src="js/acessojs.js"></script>
+	<script type="text/javascript" src="js/slideshowjs.js"></script>
+</div>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+
+/* CSS Reset */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    font-family: arial;
+}
+#fmCadastro{
+	margin-left: 15%;
+}
+#formCadastro{
+	width: 400px;
+	height: 580px;
+	margin-left: 30%;
+	margin-top: 100px;
+	border-style: solid;
+	border-width: 1px;
+}
+#form1{
+	width: 380px;
+	margin-top: 5px;
+	color: black;
+}
+#titleForm{
+	font-size: 20px;
+	margin-left: 12px;
+	padding-top: 12px;
+}
+#nome{
+	height: 25px;
+	width: 120px;
+	margin-top: 15px;
+	margin-left: 16%;
+}
+#sobrenome{
+	height: 25px;
+	width: 120px;
+	margin-left: 7%;
+}
+#labelEmail{
+	margin-left: 17%;
+}
+#inputEmail{
+	height: 25px;
+	width: 200px;
+	margin-left: 6%;
+}
+#labelSenha{
+	margin-left: 17%;
+}
+#inputSenha{
+	height: 25px;
+	width: 200px;
+	margin-left: 6%;
+}
+#labelrepetirsenha{
+	margin-left: 4%;
+}
+#inputRsenha{
+	height: 25px;
+	width: 202px;
+	margin-left: 5%;
+}
+#labelPais{
+	margin-left: 20%;
+}
+#dPais{
+	height: 25px;
+	width: 120px;
+	margin-left: 6%;
+}
+#labelEstado{
+	margin-left: 16%;
+}
+#estado{
+	height: 25px;
+	width: 200px;
+	margin-left: 5%;
+}
+#labelCidade{
+	margin-left: 16%;
+}
+#cidade{
+	height: 25px;
+	width: 200px;
+	margin-left: 5%;
+}
+#nasc{
+	margin-left: 8%;	 
+}
+#dia{
+	height: 25px;
+	width: 50px;
+	margin-left: 4%;
+}
+#mes{
+	height: 25px;
+	width: 55px;
+}
+#ano{
+	height: 25px;
+	width: 50px;
+}
+#Sexo{
+	margin-left: 20%;
+	margin-right: 5%;
+}
+#termos{
+	margin-left: 10%;
+}
+#btnCadastro{
+	width: 100px;
+    border-radius: 5px;
+    margin-left: 37%;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #b3b3b3;
+}

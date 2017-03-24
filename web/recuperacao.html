@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="css/EstiloDefinitivo.css">
+<link rel="stylesheet" type="text/css" href="css/recuperacao.css">
+<!--<link rel="stylesheet" type="text/css" href="css/principal.css">-->
+</head>
+<body>
+<div id="interface">
+	<div id="mySidenav" class="sidenav"> <!-- Conteudo do menu -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Home</a>
+	  <a href="#">Quem somos</a>
+	  <a href="#">Sobre</a>
+	  <a href="#">Banda</a>
+	</div>
+	<div id="id01" class="modal"> <!-- caixa modal do acesso -->					  
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span id="X" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<p id="headerForm"> Login </p>
+			<hr>
+
+			<!-- opções do login -->
+			<div class="container">   
+				<label><b>Usuario</b></label>
+				<input class="inputLogin" type="text" placeholder="Digite seu E-mail" name="uname" required>
+
+				<label><b>Senha</b></label>
+				<input class="inputLogin" type="password" placeholder="Digite a Senha" name="psw" required>  
+				
+				<button id="btnLogin" type="submit"> Login </button>
+				
+				<div id="checkLembrar">
+					<input  type="checkbox" checked="checked"> Lembrar me 
+					<span class="psg"> <a href="#"> Esqueceu a senha? </a></span>
+				</div>
+			</div>
+
+			<div class="container2">
+			    <button id="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			    <span class="psw"> Não Tem um login ? <a href="#">Cadastre-se</a></span>
+			   
+			</div>
+		</form>
+	</div>
+	<header>
+		<nav>
+			<table>
+				<tr>
+					<th id="menu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></th>
+					<th id="logo"><img src="">MAKE BAND</th>
+					<th id="acesso"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></th>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<div id="fmrecuperacao">
+			<form action="">
+			<h2>RECUPERAÇÃO DE SENHA</h2>
+			<hr>
+				<label id="labnovasenha" for="nsenha">Nova Senha</label>
+				<input id="novasenha" type="password" name="nsenha">
+				<label id="labrsenha" for="rnsenha">Repetir nova senha</label>
+				<input id="novasenha" type="password" name="rnsenha">
+				<button class="btnatualizar" type="submit">Atualizar	</button>
+			</form>
+		</div>
+	</section>
+	<footer>
+
+	</footer>
+	<script type="text/javascript" src="js/menujs.js"></script>
+	<script type="text/javascript" src="js/acessojs.js"></script>
+</div>
+</body>
+</html> 

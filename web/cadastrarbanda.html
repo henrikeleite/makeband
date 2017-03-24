@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="css/EstiloDefinitivo.css">
+<link rel="stylesheet" type="text/css" href="css/cadastrarBanda.css">
+
+</head>
+<body>
+<div id="interface">
+	<div id="mySidenav" class="sidenav"> <!-- Conteudo do menu -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Home</a>
+	  <a href="#">Quem somos</a>
+	  <a href="#">Sobre</a>
+	  <a href="#">Banda</a>
+	</div>
+		<div id="id01" class="modal"> 
+						  
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span id="X" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<p id="headerForm"> Login </p>
+			<hr>
+
+			<!-- opções do login -->
+			<div class="container">   
+				<label><b>Usuario</b></label>
+				<input class="inputLogin" type="text" placeholder="Digite seu E-mail" name="uname" required>
+
+				<label><b>Senha</b></label>
+				<input class="inputLogin" type="password" placeholder="Digite a Senha" name="psw" required>  
+				
+				<button id="btnLogin" type="submit"> Login </button>
+				
+				<div id="checkLembrar">
+					<input  type="checkbox" checked="checked"> Lembrar me 
+					<span class="psg"> <a href="#"> Esqueceu a senha? </a></span>
+				</div>
+			</div>
+
+			<div class="container2">
+			    <button id="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			    <span class="psw"> Não Tem um login ? <a href="#">Cadastre-se</a></span>
+			   
+			</div>
+		</form>
+	</div>
+	<header>
+		<nav>
+			<table>
+				<tr>
+					<th id="menu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></th>
+					<th id="logo"><img src="">MAKE BAND</th>
+					<th id="pesquisa"><input type="text" name="pesquisa"></th>
+					<th id="acesso"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></th>
+					<th id="perfil"> <a href="#">User</a></th>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<section>
+		<h2>Cadastrar Banda</h2>
+		<div id="cadastrarBanda"> <!-- div do cadastro da banda -->
+			<label for="nomeBanda">Nome da Banda</label>
+			<input type="text" name="nomeBanda"><br><br>
+			<label for="generosMusicais">Gêneros Musicais</label>
+			<select id="genero" title="Genêros Musicais"> <!-- DropDown dos generos -->
+			    	<option selected="1" value="0">Gêneros</option>
+			    	<option value="1">Alternativo</option>
+			    	<option value="2">Axé</option>
+			    	<option value="3">Black Music</option>
+			    	<option value="4">Blues</option>
+			    	<option value="5">Bossa Nova</option>
+			    	<option value="6">Brega</option>
+			    	<option value="7">Católico</option>
+			    	<option value="8">Choro</option>
+			    	<option value="9">Country</option>
+			    	<option value="10">Dance</option>
+			    	<option value="11">Death Metal</option>
+			    	<option value="12">Eletrônica</option>
+			    	<option value="13">Emocore</option>
+			    	<option value="14">Eruodito</option>
+			    	<option value="15">Experimental</option>
+			    	<option value="16">Folk</option>
+			    	<option value="17">Forró</option>
+			    	<option value="18">Gospel</option>
+			    	<option value="19">Gótico</option>
+			    	<option value="20">Grunge</option>
+			    	<option value="21">Guitar</option>
+			    	<option value="22">Hard Rock</option>
+			    	<option value="23">Heavy Metal</option>
+			    	<option value="24">Hip Hop / Rap</option>
+			    	<option value="25">House</option>
+			    	<option value="26">Indie</option>
+			    	<option value="27">Industrial</option>
+			    	<option value="28">Infantil</option>
+			    	<option value="29">Instrumental</option>
+			    	<option value="30">Instrumental Brasileiro</option>
+			    	<option value="31">Jazz</option>
+			    	<option value="32">Metal Melódico</option>
+			    	<option value="33">MPB</option>
+			    	<option value="34">New Age</option>
+			    	<option value="35">New Metal</option>
+			    	<option value="36">Pagode</option>
+			    	<option value="37">Parodia / Comédia</option>
+			    	<option value="38">Pop</option>
+			    	<option value="39">Pop Rock</option>
+			    	<option value="40">Punk Rock</option>
+			    	<option value="41">R&B</option>
+			    	<option value="42">Reggae</option>
+			    	<option value="43">Regional</option>
+			    	<option value="44">Rock</option>
+			    	<option value="45">Rock Progressivo</option>
+			    	<option value="46">Romantico</option>
+			    	<option value="47">Samba</option>
+			    	<option value="48">Samba Rock</option>
+			    	<option value="49">Sertanejo</option>
+			    	<option value="50">Soul</option>
+			    	<option value="51">Surf Music</option>
+			    	<option value="52">Trash Metal</option>
+			    	<option value="53">Trance</option>
+			    	<option value="54">World Music</option>
+			</select><br><br>
+			<label for="objetivoBanda">Objetivos da Banda</label>
+			<input type="text" name="objetivoBanda"><br><br>
+			<label for="tempoFormacao">Tempo de Formação</label>
+			<input type="text" name="tempoFormacao"><br><br>
+			<label for="integrantesNecessários">Integrantes Necessários</label>			
+			<textarea rows="4" cols="50"></textarea><br><br>
+			<label for="contato">Contato</label>
+			<input type="text" name="telefone" placeholder="Telefone">
+			<input type="email" name="email" placeholder="E-mail">
+			<button class="btncadastrar" type="submit">Salvar</button>
+		</div>
+	</section>
+	<footer>
+
+	</footer>
+	<script type="text/javascript" src="js/menujs.js"></script>
+	<script type="text/javascript" src="js/acessojs.js"></script>
+</div>
+</body>
+</html> 

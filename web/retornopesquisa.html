@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<!--<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/acesso.css">
+<link rel="stylesheet" type="text/css" href="css/principal.css">-->
+</head>
+<body>
+<div id="interface">
+	<div id="mySidenav" class="sidenav"> <!-- Conteudo do menu -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Home</a>
+	  <a href="#">Quem somos</a>
+	  <a href="#">Sobre</a>
+	  <a href="#">Banda</a>
+	</div>
+	<div id="id01" class="modal"> <!-- caixa modal do acesso -->
+						  
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<label><b>Usuario</b></label>
+				<input type="text" placeholder="Digite seu E-mail" name="uname" required>
+
+				<label><b>Senha</b></label>
+				<input type="password" placeholder="Digite a Senha" name="psw" required>
+					        
+				<button type="submit">Login</button>
+				<input type="checkbox" checked="checked"> Lembrar me
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+			    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			    <span class="psw">Esqueceu a <a href="#">senha?</a></span>
+			</div>
+		</form>
+	</div>
+	<header>
+		<nav>
+			<table>
+				<tr>
+					<th id="menu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></th>
+					<th id="logo"><img src="">MAKE BAND</th>
+					<th id="acesso"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></th>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<section>
+
+	</section>
+	<footer>
+
+	</footer>
+	<script type="text/javascript" src="js/menujs.js"></script>
+	<script type="text/javascript" src="js/acessojs.js"></script>
+</div>
+</body>
+</html> 

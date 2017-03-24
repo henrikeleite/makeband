@@ -1,0 +1,48 @@
+/* CSS Reset */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    font-family: arial;
+}
+#form1{
+	width: 380px;
+	margin-top: 5px;
+	color: black;
+	margin-bottom: 25px;
+}
+#titleForm{
+	font-size: 20px;
+	margin-left: 12px;
+	padding-top: 12px;
+}
+#fmEsqueci{
+	margin-left: 15%;
+	margin-top: 13%;
+}
+#formEsqueci{
+	width: 400px;
+	height: 200px;
+	margin-left: 30%;
+	margin-top: 100px;
+	border-style: solid;
+	border-width: 1px;
+}
+#btnEnviar{
+	width: 100px;
+    border-radius: 5px;
+    margin-left: 39%;
+    margin-top: 10%;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #b3b3b3;
+}
+#labelEmail{
+	margin-left: 12%;
+}
+#inputEmail{
+	height: 25px;
+	width: 200px;
+	margin-left: 6%;
+}

@@ -1,0 +1,42 @@
+#fmrecuperacao{
+	margin-left: 700px;
+	margin-right: 700px;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+}
+h2{
+	text-align: center;
+}
+hr{
+	height:2px; 
+	border:none; 
+	background-color: black; 
+	margin-left: 5px; 
+	margin-right: 5px;
+	margin-bottom: 30px;
+}
+
+#novasenha{
+	margin-left: 10px;
+	height: 30px;
+	width: 250px;
+	border-radius: 5px;
+}
+#labnovasenha{
+	margin-left: 60px; 
+	margin-right: 40px;
+}
+#labrsenha{
+	margin-left: 11px; 
+	margin-right: 40px;
+}
+.btnatualizar{
+	width: auto;
+	margin-left: 200px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+.btnatualizar:hover { 
+	background-color: grey;
+}

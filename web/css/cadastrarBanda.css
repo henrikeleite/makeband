@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#cadastrarBanda{
+	margin-left: 690px;
+	margin-right: 690px;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+}
+label{
+	margin-left: 50px;
+}
+
+h2{
+	text-align: center;
+}
+hr{
+	height:2px; 
+	border:none; 
+	background-color: black; 
+	margin-left: 5px; 
+	margin-right: 5px;
+	margin-bottom: 30px;
+}
+
+#nome{
+	margin-left: 110px;
+	height: 40px;
+	width: 200px;
+	border-style: solid;
+	border-radius: 5px;
+}
+#sobrenome{
+	height: 40px;
+	width: 200px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+
+#email{
+	margin-left: 11px;
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	border-radius: 5px;
+}
+#senha{
+	margin-left: 15px;
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	border-radius: 5px;
+}
+#repetirsenha{
+	margin-left: 16px;
+}
+#rsenha{
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+
+#estado{
+	margin-left: 8px;
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	border-radius: 5px;
+}
+#cidade{
+	margin-left: 8px;
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+
+#dpais{
+	margin-left: 25px;
+	height: 40px;
+	width: 405px;
+	border-style: solid;
+	
+	border-radius: 5px;
+}
+
+#dia{
+	margin-left: 50px;
+	height: 30px;
+	width: 50px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+#mes{
+	margin-left: 25px;
+	height: 30px;
+	width: 70px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+#ano{
+	margin-left: 25px;
+	height: 30px;
+	width: 60px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+
+#masculino{
+	margin-left: 2px;
+}
+#feminino{
+	margin-left: 2px;
+}
+
+#btnmas{
+	margin-left: 98px;
+}
+#btnfem{
+	margin-left: 50px;
+}
+
+
+#termos{
+	margin-left: 130px;
+}
+
+.btncadastrar{
+	width: auto;
+	margin-bottom: 20px;
+	margin-left: 210px;
+	border-radius: 5px;
+}
+.btncadastrar:hover { 
+	background-color: grey;
+}
