@@ -14,11 +14,12 @@
     <body>
         <%
         HttpExemplo http = new HttpExemplo();
+        request.setCharacterEncoding("UTF-8");
         String login = request.getParameter("uname");
         String senha = request.getParameter("psw");
         String url = "http://localhost:8080/makeband/webresources/makeband/Usuario/get/"+login+"/"+senha;
         String json = http.sendGet(url, "GET");
-        
+        out.println(json);
         if (json!=null){
             //response.sendRedirect("restrito.jsp");
            out.println("logou");

@@ -82,8 +82,8 @@ public class UsuarioDAO {
         Boolean retorno = false;
         PreparedStatement pst = Conexao.getPreparedStatement(sql);
         try {
-            System.out.println(usuario.getNome());
-            pst.setString(1, usuario.getNome());
+            System.out.println(usuario.getId());
+            pst.setString(1, usuario.getId());
             if (pst.executeUpdate() > 0) {
                 retorno = true;
             }

@@ -20,6 +20,7 @@ import javax.ws.rs.GET;
 import static javax.ws.rs.HttpMethod.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import modelo.Pesquisa;
 import modelo.Usuario;
 
 /**
@@ -120,5 +121,14 @@ public class MakebandWS {
         u = dao.buscar(u);
         System.out.println(u.getNome());
         return dao.excluir(u);
+    }
+    @GET
+    @Produces("application/json")
+    @Path("Pesquisa/filtro/get/{pesquisa}/{filtro}")
+    public String getPesquisaFiltro(@PathParam("pesquisa") String pesquisa,@PathParam("filtro") String filtro){
+        Pesquisa busca = new Pesquisa();
+        busca.setPesquisa(pesquisa);
+        busca.setFiltro(filtro);
+        return "oi";
     }
 }
